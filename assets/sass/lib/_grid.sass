@@ -26,9 +26,25 @@
         grid-template-columns: repeat(3, 1fr)
         gap: 20px
     .divisor
-        background-color: $negro
-        height: 5px
+        height: 60px
         grid-column-start: span 12
+        display: flex
+        align-items: start
+        object
+            height: 60px
+            margin-right: 20px
+        div
+            display: flex
+            flex-direction: column
+            width: 100%
+            .seccion_division
+                font-size: 24px
+                color: $negro
+            .linea_divisoria
+                height: 5px
+                background-color: $negro
+                width: 100%
+                align-self: flex-end
 
 /** Organización de los artículos página principal **/    
 
@@ -72,38 +88,40 @@
 
 /** SECCIÓN ZOOM IN **/
 #zoom_in
-    display: grid
-    grid-template-columns: repeat(12, 1fr)
-    gap: 20px
-    .main-img
-        grid-column-start: span 7
-        height: 100%
-        width: 100%
-        object-fit: cover
-    .info
-        grid-column-start: span 5
-        display: flex
-        flex-direction: column
-        justify-content: space-between
+    article
+        display: grid
+        grid-template-columns: repeat(12, 1fr)
+        gap: 20px
+        .main-img
+            grid-column-start: span 7
+            height: 100%
+            width: 100%
+            object-fit: cover
+        .info
+            grid-column-start: span 5
+            display: flex
+            flex-direction: column
+            justify-content: space-between
 
 /** SECCIÓN PLANO SUBJETIVO **/
 #plano_subjetivo
-    display: grid
-    grid-template-columns: repeat(8, 1fr)
-    gap: 20px
-    .main-img
-        grid-column-start: span 4
-        height: 100%
-        width: 100%
-        object-fit: cover
-    .info
-        grid-column-start: span 4
-        display: flex
-        flex-direction: column
-        justify-content: space-between
-    .entradilla
-        margin-top: 1em
-        grid-column-start: span 8
+    article
+        display: grid
+        grid-template-columns: repeat(8, 1fr)
+        gap: 20px
+        .main-img
+            grid-column-start: span 4
+            height: 100%
+            width: 100%
+            object-fit: cover
+        .info
+            grid-column-start: span 4
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+        .entradilla
+            margin-top: 1em
+            grid-column-start: span 8
 
 /** PUBLICIDAD **/
 #publi
@@ -114,7 +132,7 @@
 
 /** SECCIÓN CONTRAPLANO **/
 #contra_plano
-    article
+    .art-peque
         display: flex
         flex-direction: column
         .main-img

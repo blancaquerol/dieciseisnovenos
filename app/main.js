@@ -18,7 +18,8 @@ window.onload = () => {
                 /*noticias.innerHTML += `<li class="articulo" id= "${noticia.id}"><img src=" ${noticia.img}" alt="${noticia.alt}"> <span>${noticia.titulo} ${noticia.seccion} ${noticia.autor}</span></li>`;
                  */
                 if (noticia.main == true) {
-                    noticiaDestacada.innerHTML += `<div class="big_img">
+                    noticiaDestacada.innerHTML += `<article id="${noticia.id}" class="articulo">
+                    <div class="big_img">
                     <img class="hero" src="${noticia.img}" alt="${noticia.alt}">
                     <div class="bigtitle">
                         <div class="seccion">
@@ -29,30 +30,31 @@ window.onload = () => {
                         <h1>${noticia.titulo}</h1>
                     </div>
                 </div>
-                <article class="info">
+                <div class="info">
                     <div class="autorfecha">${noticia.autor} <br> <span>${noticia.fecha}</span> </div>
                     <p class="entradilla">${noticia.entradilla}</p>
-                </article>`;
+                </div>
+                </article>`
+                ;
                 } else {
                     if (noticia.seccion == "Zoom In") {
-                        zoomIn.innerHTML += `<img class="main-img" src="${noticia.img}" alt="${noticia.alt}">
-                        <article class="info">
+                        zoomIn.innerHTML += `<article id= "${noticia.id}" class="articulo"><img class="main-img" src="${noticia.img}" alt="${noticia.alt}">
+                        <div class="info">
                             <h2>${noticia.titulo}</h2>
                             <div class="autorfecha">${noticia.autor} <br> <span>${noticia.fecha}</span> </div>
                             <p class="entradilla">${noticia.entradilla}</p>
-                        </article>`;
+                        </div></article`;
                     } else if (noticia.seccion == "Plano Subjetivo") {
-                        planosub.innerHTML += `<img class="main-img" src="${noticia.img}" alt="${noticia.alt}">
-                        <article class="info">
+                        planosub.innerHTML += `<article id= "${noticia.id}" class="articulo"><img class="main-img" src="${noticia.img}" alt="${noticia.alt}">
+                        <div class="info">
                             <h2>${noticia.titulo}</h2>
                             <div class="autorfecha">${noticia.autor} <br> <span>${noticia.fecha}</span> </div>
-                            </article>
-                            <p class="entradilla">${noticia.entradilla}</p>
-                            `;
+                            </div>
+                            <p class="entradilla">${noticia.entradilla}</p></article`;
                     } else if (noticia.seccion == "Contraplano") {
-                        contraplano.innerHTML += `<article><img class="main-img" src="${noticia.img}" alt="${noticia.alt}">
+                        contraplano.innerHTML += `<article id= "${noticia.id}" class="articulo"><div class="art-peque"><img class="main-img" src="${noticia.img}" alt="${noticia.alt}">
                         <h2>${noticia.titulo}</h2>
-                        <div class="autorfecha">${noticia.autor}<br><span>${noticia.fecha}</span><article></div>`;
+                        <div class="autorfecha">${noticia.autor}<br><span>${noticia.fecha}</span><div></div></article`;
                     }
                 }
             });

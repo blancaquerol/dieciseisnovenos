@@ -470,10 +470,44 @@ label {
 }
 
 .container .divisor {
-  background-color: black;
-  height: 5px;
+  height: 60px;
   -ms-grid-column: span 12;
       grid-column-start: span 12;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.container .divisor object {
+  height: 60px;
+  margin-right: 20px;
+}
+
+.container .divisor div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.container .divisor div .seccion_division {
+  font-size: 24px;
+  color: black;
+}
+
+.container .divisor div .linea_divisoria {
+  height: 5px;
+  background-color: black;
+  width: 100%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 /** Organización de los artículos página principal **/
@@ -554,7 +588,7 @@ label {
 }
 
 /** SECCIÓN ZOOM IN **/
-#zoom_in {
+#zoom_in article {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[12];
@@ -562,7 +596,7 @@ label {
   gap: 20px;
 }
 
-#zoom_in .main-img {
+#zoom_in article .main-img {
   -ms-grid-column: span 7;
       grid-column-start: span 7;
   height: 100%;
@@ -571,7 +605,7 @@ label {
      object-fit: cover;
 }
 
-#zoom_in .info {
+#zoom_in article .info {
   -ms-grid-column: span 5;
       grid-column-start: span 5;
   display: -webkit-box;
@@ -587,7 +621,7 @@ label {
 }
 
 /** SECCIÓN PLANO SUBJETIVO **/
-#plano_subjetivo {
+#plano_subjetivo article {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[8];
@@ -595,7 +629,7 @@ label {
   gap: 20px;
 }
 
-#plano_subjetivo .main-img {
+#plano_subjetivo article .main-img {
   -ms-grid-column: span 4;
       grid-column-start: span 4;
   height: 100%;
@@ -604,7 +638,7 @@ label {
      object-fit: cover;
 }
 
-#plano_subjetivo .info {
+#plano_subjetivo article .info {
   -ms-grid-column: span 4;
       grid-column-start: span 4;
   display: -webkit-box;
@@ -619,7 +653,7 @@ label {
           justify-content: space-between;
 }
 
-#plano_subjetivo .entradilla {
+#plano_subjetivo article .entradilla {
   margin-top: 1em;
   -ms-grid-column: span 8;
       grid-column-start: span 8;
@@ -634,7 +668,7 @@ label {
 }
 
 /** SECCIÓN CONTRAPLANO **/
-#contra_plano article {
+#contra_plano .art-peque {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -644,7 +678,7 @@ label {
           flex-direction: column;
 }
 
-#contra_plano article .main-img {
+#contra_plano .art-peque .main-img {
   height: 250px;
   width: 100%;
   -o-object-fit: cover;
@@ -751,8 +785,7 @@ footer .subscribeform {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 90vw;
-  margin: auto;
+  margin: 0 50px;
   padding: 4em 10em;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
@@ -805,7 +838,7 @@ footer .subscribeform form div input {
 }
 
 footer .redes_footer {
-  margin: 2em 0;
+  margin: 2em 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
