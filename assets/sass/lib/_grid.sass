@@ -1,6 +1,71 @@
-/** main
-    width: 100vw
+/** Organización de la grid **/
+
+.container
     display: grid
     grid-template-columns: repeat(12, 1fr)
-    column-gap: 20px
-    margin: 0 50px **/
+    gap: 20px
+    margin: 2em 50px
+    img
+        width: 50%
+    #noticia_destacada
+        height: fit-content
+        grid-column-start: span 12
+    #zoom_in
+        background-color: salmon
+        height: 600px
+        grid-column-start: span 12
+    #plano_subjetivo
+        background-color: yellow
+        height: 600px
+        grid-column-start: span 8
+    #publi
+        grid-column-start: span 4
+    #contra_plano
+        background-color: orange
+        height: 600px
+        grid-column-start: span 12
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+    .divisor
+        background-color: $negro
+        height: 5px
+        grid-column-start: span 12
+
+/** Organización de los artículos página principal **/    
+
+#noticia_destacada
+    height: 100%
+    display: flex
+    flex-direction: column
+    .big_img
+        position: relative
+        height: 60vh
+        .hero
+            width: 100%
+            height: 100%
+            object-fit: cover
+            position: absolute
+            z-index: -1
+        .bigtitle
+            padding: 3em 5em
+            z-index: 2
+            .seccion
+                display: flex
+                align-items: baseline
+                object
+                    height: 30px
+                    filter: invert(1)
+    .info
+        margin-top: 1em
+        height: fit-content
+        display: grid
+        grid-template-columns: repeat(12, 1fr)
+        align-items: baseline
+        .autorfecha
+            grid-column-start: span 5
+            text-transform: uppercase
+            font-size: 12px
+            span
+                font-size: 10px
+        .entradilla
+            grid-column-start: span 7
