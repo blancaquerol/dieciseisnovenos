@@ -5,27 +5,26 @@
     grid-template-columns: repeat(12, 1fr)
     gap: 20px
     margin: 2em 50px
+    align-items: center
     img
         width: 50%
     #noticia_destacada
         height: fit-content
         grid-column-start: span 12
     #zoom_in
-        background-color: salmon
-        height: 600px
+        height: fit-content
         grid-column-start: span 12
     #plano_subjetivo
-        background-color: yellow
-        height: 600px
+        height: fit-content
         grid-column-start: span 8
     #publi
         grid-column-start: span 4
     #contra_plano
-        background-color: orange
-        height: 600px
+        height: fit-content
         grid-column-start: span 12
         display: grid
         grid-template-columns: repeat(3, 1fr)
+        gap: 20px
     .divisor
         background-color: $negro
         height: 5px
@@ -33,6 +32,7 @@
 
 /** Organización de los artículos página principal **/    
 
+/** NOTICIA DESTACADA **/
 #noticia_destacada
     height: 100%
     display: flex
@@ -69,3 +69,55 @@
                 font-size: 10px
         .entradilla
             grid-column-start: span 7
+
+/** SECCIÓN ZOOM IN **/
+#zoom_in
+    display: grid
+    grid-template-columns: repeat(12, 1fr)
+    gap: 20px
+    .main-img
+        grid-column-start: span 7
+        height: 100%
+        width: 100%
+        object-fit: cover
+    .info
+        grid-column-start: span 5
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+
+/** SECCIÓN PLANO SUBJETIVO **/
+#plano_subjetivo
+    display: grid
+    grid-template-columns: repeat(8, 1fr)
+    gap: 20px
+    .main-img
+        grid-column-start: span 4
+        height: 100%
+        width: 100%
+        object-fit: cover
+    .info
+        grid-column-start: span 4
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+    .entradilla
+        margin-top: 1em
+        grid-column-start: span 8
+
+/** PUBLICIDAD **/
+#publi
+    img
+        height: 100%
+        width: 100%
+        object-fit: cover
+
+/** SECCIÓN CONTRAPLANO **/
+#contra_plano
+    article
+        display: flex
+        flex-direction: column
+        .main-img
+            height: 250px
+            width: 100%
+            object-fit: cover

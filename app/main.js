@@ -29,17 +29,30 @@ window.onload = () => {
                         <h1>${noticia.titulo}</h1>
                     </div>
                 </div>
-                <div class="info">
+                <article class="info">
                     <div class="autorfecha">${noticia.autor} <br> <span>${noticia.fecha}</span> </div>
                     <p class="entradilla">${noticia.entradilla}</p>
-                </div>`;
+                </article>`;
                 } else {
                     if (noticia.seccion == "Zoom In") {
-                        zoomIn.innerHTML += `<img class="articulo" src=" ${noticia.img}" alt="${noticia.alt}">`;
+                        zoomIn.innerHTML += `<img class="main-img" src="${noticia.img}" alt="${noticia.alt}">
+                        <article class="info">
+                            <h2>${noticia.titulo}</h2>
+                            <div class="autorfecha">${noticia.autor} <br> <span>${noticia.fecha}</span> </div>
+                            <p class="entradilla">${noticia.entradilla}</p>
+                        </article>`;
                     } else if (noticia.seccion == "Plano Subjetivo") {
-                        planosub.innerHTML += `<img class="articulo" src=" ${noticia.img}" alt="${noticia.alt}">`;
+                        planosub.innerHTML += `<img class="main-img" src="${noticia.img}" alt="${noticia.alt}">
+                        <article class="info">
+                            <h2>${noticia.titulo}</h2>
+                            <div class="autorfecha">${noticia.autor} <br> <span>${noticia.fecha}</span> </div>
+                            </article>
+                            <p class="entradilla">${noticia.entradilla}</p>
+                            `;
                     } else if (noticia.seccion == "Contraplano") {
-                        contraplano.innerHTML += `<div class= "articulo"><img src=" ${noticia.img}" alt="${noticia.alt}"></div>`;
+                        contraplano.innerHTML += `<article><img class="main-img" src="${noticia.img}" alt="${noticia.alt}">
+                        <h2>${noticia.titulo}</h2>
+                        <div class="autorfecha">${noticia.autor}<br><span>${noticia.fecha}</span><article></div>`;
                     }
                 }
             });
