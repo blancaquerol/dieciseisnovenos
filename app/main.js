@@ -15,8 +15,6 @@ window.onload = () => {
         .then(data => {
             datos = data;
             data.forEach(noticia => {
-                /*noticias.innerHTML += `<li class="articulo" id= "${noticia.id}"><img src=" ${noticia.img}" alt="${noticia.alt}"> <span>${noticia.titulo} ${noticia.seccion} ${noticia.autor}</span></li>`;
-                 */
                 if (noticia.main == true) {
                     noticiaDestacada.innerHTML += `<article id="${noticia.id}" class="articulo">
                     <div class="big_img">
