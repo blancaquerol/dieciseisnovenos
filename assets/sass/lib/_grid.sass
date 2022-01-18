@@ -10,13 +10,12 @@
         cursor: pointer
         padding: .4em
         &:hover
-            -webkit-box-shadow: 7px 6px 14px -2px rgba(0,0,0,0.45); 
-            box-shadow: 7px 6px 14px -2px rgba(0,0,0,0.45);
+            -webkit-box-shadow: 7px 6px 14px -2px rgba(0,0,0,0.45)
+            box-shadow: 7px 6px 14px -2px rgba(0,0,0,0.45)
             transition: all .2s linear
             h1, h2
                 text-decoration: underline
                 text-decoration-thickness: 5px
-
     img
         width: 50%
     #noticia_destacada
@@ -57,6 +56,36 @@
                 width: 100%
                 align-self: flex-end
 
+/** MEDIA CONTENEDOR GRANDE **/
+.container
+    @media screen and ( max-width: 1000px)
+        grid-template-columns: repeat(6, 1fr)
+        gap: 15px
+        margin: 3em 20px
+        #noticia_destacada
+            grid-column-start: span 6
+        #zoom_in
+            grid-column-start: span 6
+        #plano_subjetivo
+            grid-column-start: span 6
+        #publi
+            display: none
+        #contra_plano
+            grid-column-start: span 6
+            display: block
+        .divisor
+            height: 30px
+            grid-column-start: span 6
+            margin: 2.5em 0 1em
+            object
+                height: 30px
+            div
+                .seccion_division
+                    font-size: 24px
+                    line-height: 24px
+                .linea_divisoria
+                    height: 3px
+
 /** Organización de los artículos página principal **/    
 
 /** NOTICIA DESTACADA **/
@@ -82,6 +111,8 @@
             z-index: -1
         #esquina
             position: absolute
+            @media screen and ( max-width: 1000px)
+                height: 50%
         .bigtitle
             padding: 3em 5em
             z-index: 2
@@ -89,6 +120,9 @@
                 color: white
                 padding: .2em
                 width: 600px
+                @media screen and ( max-width: 1000px)
+                    width: 100%
+                    padding: .4em
             .seccion
                 display: flex
                 align-items: baseline
@@ -96,6 +130,9 @@
                     height: 30px
                     filter: invert(1)
                     margin-right: 1em
+                @media screen and ( max-width: 1000px)
+                    object
+                        height: 20px
     .info
         margin-top: 1em
         height: fit-content
@@ -154,9 +191,9 @@
 /** PUBLICIDAD **/
 #publi
     background-color: #EAEAEA
-    padding: 5px 10px 15px 
+    padding: 5px 10px 15px
     .publi_text
-        color:#1180D1
+        color: #1180D1
     img
         height: 100%
         width: 100%
@@ -174,3 +211,53 @@
             margin-bottom: 1em
         .autorfecha
             margin-top: 1em
+
+/** MEDIA CONTENEDORES PEQUEÑOS **/
+#noticia_destacada
+    @media screen and ( max-width: 1000px)
+        .info
+            display: block
+            .autorfecha
+                margin: 2em 0
+                display: flex
+                justify-content: space-between
+                color: $gris
+                font-size: 10px
+    @media screen and ( max-width: 600px )
+        .big_img
+            height: 80vh
+        
+#zoom_in
+    @media screen and ( max-width: 1000px)
+        article
+            display: block
+        .main-img
+            margin-bottom: 2em
+            .autorfecha
+                margin: 2em 0
+                display: flex
+                justify-content: space-between
+                color: $gris
+                font-size: 10px
+
+#plano_subjetivo
+    @media screen and ( max-width: 1000px)
+        article
+            display: block
+        .main-img
+            margin-bottom: 2em
+            .autorfecha
+                margin: 2em 0
+                display: flex
+                justify-content: space-between
+                color: $gris
+                font-size: 10px
+
+#contra_plano
+    @media screen and ( max-width: 1000px)
+        .autorfecha
+            margin: 2em 0
+            display: flex
+            justify-content: space-between
+            color: $gris
+            font-size: 10px

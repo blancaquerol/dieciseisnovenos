@@ -14,7 +14,6 @@ window.onload = () => {
             let noticia = data[Number(param) - 1];
             let detail = document.querySelector("#detail");
             if (noticia.template == "largo") {
-                /* let content = ``; */
                 detail.innerHTML = `<article><section class="encabezado">
                 <figure class="main-img">
                     <img src="../../${noticia.img}" alt="${noticia.src}">

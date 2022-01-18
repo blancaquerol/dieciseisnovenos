@@ -53,7 +53,7 @@ window.onload = () => {
                     } else if (noticia.seccion == "Contraplano") {
                         contraplano.innerHTML += `<article id= "${noticia.id}" class="articulo"><div class="art-peque"><img class="main-img" src="${noticia.img}" alt="${noticia.alt}">
                         <h2>${noticia.titulo}</h2>
-                        <div class="autorfecha">${noticia.autor}<br><span>${noticia.fecha}</span><div></div></article`;
+                        <div class="autorfecha">${noticia.autor}<br><span>${noticia.fecha}</span></article`;
                     }
                 }
             });
