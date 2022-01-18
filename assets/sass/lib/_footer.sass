@@ -24,13 +24,16 @@ footer
                 font-size: 14px
                 margin-bottom: 0
                 border: 1px solid $blanco
+                &:hover
+                    background-color: $blanco
+                    color: $negro
+                    transition: all .2s linear
             div
                 input
                     padding: 0 1em
                     width: 250px
                     height: 25px
                     font-size: 10px
-                    color: $gris
                     margin-bottom: 2.5em
     .redes_footer
         margin: 2em 50px
@@ -45,6 +48,9 @@ footer
             justify-content: space-between
             img
                 height: 25px
+                &:hover
+                    filter: invert(.5)
+                    transition: all .2s linear
     .credits
         display: flex
         align-items: center

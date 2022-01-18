@@ -1,1 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92.89 54.89"><defs><style>.cls-1{fill:#1d1d1b;}</style></defs><g id="Capa_2" data-name="Capa 2"><g id="Capa_1-2" data-name="Capa 1"><polygon class="cls-1" points="92.89 54.89 10.43 54.89 10.43 51.14 89.14 51.14 89.14 7.7 92.89 7.7 92.89 54.89"/><path class="cls-1" d="M84.09,47.88H0V0H84.09ZM3.63,44.39H80.46V3.49H3.63Z"/></g></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="../../css/style.css"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92.62 54.89"><defs><style>.cls-1{fill:#1d1d1b;}</style></defs><g id="Capa_2" data-name="Capa 2"><g id="Capa_1-2" data-name="Capa 1">
+
+<path class="cls-1" d="M92.62 54.89 10.17 54.89 10.17 51.14 88.87 51.14 88.87 7.7 92.62 7.7 92.62 54.89z M3.47 47.88 0 47.88 0 0 83.83 0 83.83 3.25 3.47 3.25 3.47 47.88z M83.83 47.88 0 47.88 0 44.63 80.36 44.63 80.36 2.98 83.83 2.98 83.83 47.88z">
+
+<animate  attributeName="d" dur="0.5s" fill="freeze" begin= "mouseover" end="mouseout"
+    
+    values="M92.62 54.89 10.17 54.89 10.17 51.14 88.87 51.14 88.87 7.7 92.62 7.7 92.62 54.89z M3.47 47.88 0 47.88 0 0 83.83 0 83.83 3.25 3.47 3.25 3.47 47.88z M83.83 47.88 0 47.88 0 44.63 80.36 44.63 80.36 2.98 83.83 2.98 83.83 47.88z;
+
+    M92.62 54.89 10.17 54.89 10.17 51.14 88.87 51.14 88.87 7.7 92.62 7.7 92.62 54.89z M3.47 40.9 0 40.9 0 0 76.25 0 76.25 3.25 3.47 3.25 3.47 40.9z M83.83 47.88 7.57 47.88 7.57 44.63 80.36 44.63 80.36 6.98 83.83 6.98 83.83 47.88z"/>
+
+</path>
+</g></g></svg>

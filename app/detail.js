@@ -48,7 +48,7 @@ window.onload = () => {
             </section>
             <section id="publi">
                 <p class="publi_text">Anuncio | Advertisement</p>
-                <img src="../images/Cinesa.jpg" alt="Publicidad de Cinesa">
+                <a href="https://www.cinesa.es/" target="_blank"><img src="../images/Cinesa.jpg" alt="Publicidad de Cinesa"></a>
             </section>
             </article>`
             } else if (noticia.template == "corto") {
@@ -78,7 +78,12 @@ window.onload = () => {
                 <img src=" ${noticia.contenido[1].imagen}" alt="${noticia.contenido[1].img_alt}">
                 <p>${noticia.contenido[2].p}</p>
                 <h4>${noticia.contenido[2].destacado}</h4>
-            </section></article>`
+            </section>
+            <section id="publi">
+                <p class="publi_text">Anuncio | Advertisement</p>
+                <a href="https://www.cinesa.es/" target="_blank"><img src="../images/Cinesa.jpg" alt="Publicidad de Cinesa"></a>
+            </section>
+            </article>`
             }
         })
 }

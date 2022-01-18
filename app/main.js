@@ -17,12 +17,15 @@ window.onload = () => {
                     noticiaDestacada.innerHTML += `<article id="${noticia.id}" class="articulo">
                     <div class="big_img">
                     <img class="hero" src="${noticia.img}" alt="${noticia.alt}">
+                    <div class="shadow"></div>
                     <div class="bigtitle">
                         <div class="seccion">
                             <object data="${noticia.icono}" type="image/svg+xml">
                             </object>
                             <h6>${noticia.seccion}</h6>
                         </div>
+                        <object id="esquina" class="esquina" data="assets/images/SVG/esquina.svg" type="image/svg+xml">
+                        </object>
                         <h1>${noticia.titulo}</h1>
                     </div>
                 </div>
@@ -31,7 +34,7 @@ window.onload = () => {
                     <p class="entradilla">${noticia.entradilla}</p>
                 </div>
                 </article>`
-                ;
+                        ;
                 } else {
                     if (noticia.seccion == "Zoom In") {
                         zoomIn.innerHTML += `<article id= "${noticia.id}" class="articulo"><img class="main-img" src="${noticia.img}" alt="${noticia.alt}">

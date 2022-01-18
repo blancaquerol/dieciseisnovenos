@@ -1,1 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92.62 54.89"><defs><style>.cls-1{fill:#1d1d1b;}</style></defs><g id="Capa_2" data-name="Capa 2"><g id="Capa_1-2" data-name="Capa 1"><path class="cls-1" d="M92.62,54.89H0V0H92.62ZM4,50.89H88.62V4H4Z"/><path class="cls-1" d="M72,42.38H20.63V12.52H72Zm-47.36-4H68V16.52H24.63Z"/></g></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="../../css/style.css"?>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92.62 54.89"><defs><style>.cls-1{fill:#1d1d1b;}</style></defs><g id="Capa_2" data-name="Capa 2"><g id="Capa_1-2" data-name="Capa 1">
+<path class="cls-1" d="M22.11 40.37 18.11 40.37 18.11 10.58 69.52 10.58 69.52 14.58 22.11 14.58 22.11 40.37z M74.14 44.53 22.73 44.53 22.73 40.53 70.14 40.53 70.14 14.75 74.14 14.75 74.14 44.53z M92.62,54.89H0V0H92.62ZM4,50.89H88.62V4H4Z">
+<animate  attributeName="d" dur="0.5s" fill="freeze" begin= "mouseover" end="mouseout"
+    
+    values="M22.11 40.37 18.11 40.37 18.11 10.58 69.52 10.58 69.52 14.58 22.11 14.58 22.11 40.37z M74.14 44.53 22.73 44.53 22.73 40.53 70.14 40.53 70.14 14.75 74.14 14.75 74.14 44.53z M92.62,54.89H0V0H92.62ZM4,50.89H88.62V4H4Z;
+
+    M15.12 39.29 11.12 39.29 11.12 9.51 62.53 9.51 62.53 13.51 15.12 13.51 15.12 39.29z M81.5 45.39 30.09 45.39 30.09 41.39 77.5 41.39 77.5 15.6 81.5 15.6 81.5 45.39z M92.62,54.89H0V0H92.62ZM4,50.89H88.62V4H4Z"/>
+</path>
+</g></g></svg>
