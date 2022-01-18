@@ -473,8 +473,9 @@ label {
 }
 
 .container #publi {
-  -ms-grid-column: span 4;
-      grid-column-start: span 4;
+  -ms-grid-column: 10;
+      grid-column-start: 10;
+  grid-column-end: 13;
 }
 
 .container #contra_plano {
@@ -724,6 +725,15 @@ label {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  margin-bottom: 1em;
+}
+
+#contra_plano .art-peque .autorfecha {
+  margin-top: 1em;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 header {
@@ -1074,7 +1084,6 @@ footer .credits {
   gap: 20px;
   margin-bottom: 3.5em;
   padding-bottom: 2em;
-  border-bottom: 5px solid black;
 }
 
 #detail article .encabezado2 figure {
@@ -1103,6 +1112,7 @@ footer .credits {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  border-bottom: 5px solid black;
 }
 
 #detail article .encabezado2 .main-text .seccion {
@@ -1124,8 +1134,9 @@ footer .credits {
 }
 
 #detail article .content2 {
-  -ms-grid-column: span 8;
-      grid-column-start: span 8;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 10;
 }
 
 #detail article .content2 .entradilla {

@@ -1,5 +1,4 @@
 window.onload = () => {
-    //alert ("this Boiler Works");
 
     let obtenerParam = (url) => {
         let urlParam = String(url.match(/\?+.+/));
@@ -63,9 +62,9 @@ window.onload = () => {
                         <object data="../../${noticia.icono}" type="image/svg+xml">
                         </object>
                         <h6>${noticia.seccion}</h6>
-                        <div class="info">
+                    </div>
+                    <div class="info">
                             <div class="autorfecha">${noticia.autor} <br> <span>${noticia.fecha}</span></div>
-                        </div>
                     </div>
                     <p class="entradilla">${noticia.entradilla}</p>
                 </div>
@@ -79,7 +78,6 @@ window.onload = () => {
                 <img src=" ${noticia.contenido[1].imagen}" alt="${noticia.contenido[1].img_alt}">
                 <p>${noticia.contenido[2].p}</p>
                 <h4>${noticia.contenido[2].destacado}</h4>
-                <img src=" ${noticia.contenido[2].imagen}" alt="${noticia.contenido[2].img_alt}">
             </section></article>`
             }
         })
