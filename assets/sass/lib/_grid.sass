@@ -4,7 +4,7 @@
     display: grid
     grid-template-columns: repeat(12, 1fr)
     gap: 20px
-    margin: 2em 50px
+    margin: 3em 50px
     align-items: center
     article
         cursor: pointer
@@ -123,12 +123,19 @@
             display: flex
             flex-direction: column
             justify-content: space-between
+            justify-content: flex-start
+            .autorfecha
+                margin-top: 2em
         .entradilla
             margin-top: 1em
             grid-column-start: span 8
 
 /** PUBLICIDAD **/
 #publi
+    background-color: #EAEAEA
+    padding: 5px 10px 15px 
+    .publi_text
+        color:#1180D1
     img
         height: 100%
         width: 100%

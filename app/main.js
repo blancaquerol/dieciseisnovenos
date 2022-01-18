@@ -3,8 +3,6 @@ window.onload = () => {
 
     let mostrarDetalle = (e) => { window.open(`assets/pages/articulo.html?id=${e.currentTarget.id}`, `_self`) }
 
-    /*     let noticias = document.querySelector("#noticias");
-     */
     let noticiaDestacada = document.querySelector("#noticia_destacada");
     let zoomIn = document.querySelector("#zoom_in");
     let planosub = document.querySelector("#plano_subjetivo");
